@@ -1,0 +1,105 @@
+
+
+@tailwind base;
+@tailwind components;
+html{
+  scroll-behavior: smooth ;
+}
+
+.p{
+  font-family: "Nunito", sans-serif;
+  @apply text-[17px] md:text-[20px] text-[#3E4349];
+}
+.h{
+  font-family: "Cal Sans", sans-serif;
+ @apply tracking-wider
+}
+.h1{
+  font-family: "Cal Sans", sans-serif;
+  font-style: normal;
+  @apply text-[25px] md:text-[40px] font-[400] leading-[39px]  mb-[20px] tracking-wider text-[#20B2AA] relative top-[12px]; 
+}
+@tailwind utilities;
+
+p,.pf{
+  font-family: "Nunito", sans-serif;
+}
+
+.home2{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../src/assets/homeimg2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.hero::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 799px;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.932),
+      rgba(0, 0, 0, 0.541),
+      rgba(0, 0, 0, 0.219)
+    ),
+    url(../public/heroimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+
+
+td{
+  border: 1px solid rgb(221, 221, 221);
+}
+@media (max-width: 768px) {
+  .hero,.home2::before {
+    background-attachment: scroll; 
+    background-position: center;
+  }
+}
+.bs{
+  width: 100vw;
+  height: 100vh;
+  background: #0000009c;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider-container {
+  width:100vw;
+  overflow: hidden;
+  background-color: #252525;
+  padding: 10px 0;
+  border-bottom: 1px solid #f7f5f5;
+
+}
+
+.slider-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+body{
+  overflow-x: hidden;
+}
+@media screen and (max-width:875px) {
+  .li{
+    padding-left: 3px;
+    padding-right: 4px;
+  }
+}
+table{
+  overflow-x: auto;
+}
