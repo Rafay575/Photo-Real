@@ -43,7 +43,7 @@ export default function Service3() {
           <h1 className="h1 text-[#3E4349] h">Types of ID Photos We Take</h1>
           <hr /><br />
           <p className="p">Color Rolls are $13 for scanning and take 2-3 days.</p>
-          <p className="p">B/W Rolls are 35mm and costs $17 and take 3-4 days.</p>
+          <p className="p">B/W Rolls are 35mm and costs $18 and take 3-4 days.</p>
           <p className="p">120mm Rolls either b/w or colour costs $21 plus tax and take 3-4 days.</p>
           <p className="p">You’ll get your negatives back.</p>
           </div> <br />
